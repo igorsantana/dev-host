@@ -123,7 +123,13 @@ async function exec(
     child.stderr?.on("data", (d) => {
       stderr += d.toString();
     });
-    child.on("error", reject);
+    child.on("error", (err) => {
+      resolve({
+        code: 1,
+        stdout: "",
+        stderr: err instanceof Error ? err.message : String(err),
+      });
+    });
     child.on("close", (code) => resolve({ code: code ?? 1, stdout, stderr }));
   });
 }
