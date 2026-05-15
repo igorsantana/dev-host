@@ -1,6 +1,14 @@
 {
   "developmentRoot": "..",
   "hostPort": 4040,
+  "syncRepos": [
+    {
+      "path": "cyberdeck-ui",
+      "name": "Cyberdeck UI",
+      "repository": "https://github.com/igorsantana/cyberdeck-ui.git",
+      "branch": "main"
+    }
+  ],
   "projects": [
     {
       "id": "personal-planner",
@@ -18,6 +26,8 @@
       "name": "Finance News",
       "description": "Pipeline, reports, trends, and LLM investment advisor.",
       "path": "Projeto",
+      "repository": "https://github.com/igorsantana/finance-sentiment.git",
+      "branch": "develop",
       "image": "/images/projeto.svg",
       "runtime": "docker",
       "port": 5173,
@@ -31,6 +41,8 @@
       "name": "Vinyl Catalog",
       "description": "Next.js catalog with AI scan and record management.",
       "path": "vinyl-catalog",
+      "repository": "https://github.com/igorsantana/vinyl-collector.git",
+      "branch": "develop",
       "image": "/images/vinyl-catalog.svg",
       "runtime": "npm",
       "port": 3000,

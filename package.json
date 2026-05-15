@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "concurrently -n server,web -c cyan,magenta \"npm run dev -w server\" \"npm run dev -w web\"",
     "build": "npm run build -w server && npm run build -w web",
-    "start": "npm run start -w server"
+    "start": "npm run start -w server",
+    "sync": "node scripts/sync-projects.mjs"
   },
   "devDependencies": {
     "concurrently": "^9.1.0"
