@@ -1,0 +1,6 @@
+@import "@cyberdeck/ui/tokens.css";
+@import "@cyberdeck/ui/styles.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
